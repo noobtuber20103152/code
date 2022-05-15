@@ -22,8 +22,9 @@ def anti(l):  # defined a function that rotates a input in anticlockwise directi
 def rev(l):  # defined a reverse function that reverses input
     newstring = ''
     i = 1  # take a empty string
-    for i in range(1, len(l)+1):  # applied for loop
+    while i< len(l) + 1:  # applied for loop
         newstring = newstring+l[-i]  # appending values in empty string
+        i = i+1
     return newstring  # take defined functions return
 
 

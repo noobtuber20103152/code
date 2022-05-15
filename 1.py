@@ -65,10 +65,12 @@ def displayAll(n):
     if(n == 1):
         return path1
     else:
-        for i in range(n-1):
+        i  = 0
+        while i< n-1:
             nxtpath1 = reverseFunc(opposite(anti(path1)))+'d'+path1 + \
                 'r'+path1+'u'+reverseFunc(opposite(clock(path1)))
             path1 = nxtpath1
+            i = i+1
         return nxtpath1
 
 
