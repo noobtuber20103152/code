@@ -71,10 +71,12 @@ def display(n):  # defined a function that takes input and making a final patter
     s = []  # take a empty list
     t = (1, 1)  # defined a tuple for starting coordinate
     s.append(t)  # appending t in s list
-    for i in function1(n):  # applying for loop
-        t = move(t, i)  # using another move function creating values in t
+    str = function1(n)
+    i = 0
+    while i< len(str): # applying for loop
+        t = move(t, str[i])  # using another move function creating values in t
         s.append(t)  # appending t values in s
-
+        i = i+1
     return s  # taking functions return
 
 
